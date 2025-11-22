@@ -6,6 +6,7 @@ const authRoutes = require('./routes/auth');
 const setupRoutes = require('./routes/setup');
 const minecraftRoutes = require('./routes/minecraft');
 const workspaceRoutes = require('./routes/workspace');
+const agreementsRoutes = require('./routes/agreements');
 
 const app = express();
 const PORT = process.env.PORT || 24042;
@@ -19,6 +20,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/setup', setupRoutes);
 app.use('/api/minecraft', minecraftRoutes);
 app.use('/api/workspace', workspaceRoutes);
+app.use('/api/agreements', agreementsRoutes);
 
 // Serve Static Frontend in Production
 if (process.env.NODE_ENV === 'production') {
