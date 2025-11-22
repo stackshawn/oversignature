@@ -1,0 +1,16 @@
+# Property of Zafrid - OverSignature. Closed Source. Copyright © 2024-2025. Unauthorized distribution prohibited.
+
+[Unit]
+Description=OverSignature ERP & Network Management System
+After=network.target
+
+[Service]
+# Change this to your user
+User=root
+# Adjust the path to where the binary is located
+ExecStart=/usr/local/bin/oversignature
+Restart=always
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,19 @@
+{
+  "name": "oversignature-root",
+  "version": "1.0.0",
+  "description": "OverSignature ERP & Network Management System",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm install && npm run build",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "uuid": "^13.0.0"
+  }
+}
