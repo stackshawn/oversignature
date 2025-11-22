@@ -27,18 +27,18 @@ const DashboardLayout = () => {
           </Link>
           {/* Placeholder for other links based on requirements */}
           <div className="text-xs font-semibold text-gray-600 uppercase mt-6 mb-2 px-4">Management</div>
-          <Link to="#" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors opacity-50 cursor-not-allowed">
+          <Link to="/staff" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors">
             Staff
           </Link>
-          <Link to="#" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors opacity-50 cursor-not-allowed">
+          <Link to="/agreements" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors">
             Agreements
           </Link>
           
           <div className="text-xs font-semibold text-gray-600 uppercase mt-6 mb-2 px-4">Network</div>
-          <Link to="#" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors opacity-50 cursor-not-allowed">
+          <Link to="/servers" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors">
             Servers
           </Link>
-          <Link to="#" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors opacity-50 cursor-not-allowed">
+          <Link to="/rcon" className="block px-4 py-2 rounded hover:bg-gray-800 hover:text-aeon-cyan transition-colors">
             RCON
           </Link>
         </nav>
